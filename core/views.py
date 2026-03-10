@@ -41,11 +41,11 @@ def return_book(request, record_id):
     except BorrowRecord.DoesNotExist:
         return Response({"error": "Active record not found"}, status=status.HTTP_404_NOT_FOUND)
     
-    # Update Record
+    
     record.return_date = timezone.now()
     record.save()
     
-    # Update Book Availability
+    
     record.book.is_available = True
     record.book.save()
     
