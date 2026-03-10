@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*l4p_eedj=004m510p)o1#h5j(xuku1%&o#$y4o@=_@=(38max
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['library-management-beryl-delta.vercel.app']
 
 
 # Application definition
